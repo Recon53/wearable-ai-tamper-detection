@@ -30,27 +30,36 @@ Traditional security mechanisms primarily focus on software integrity and networ
 
 ## Threat Model
 
-The threat model considered in this research includes adversaries with:
+This research considers an adversary capable of performing physical or logical tampering on a wearable device after deployment. The attacker may have temporary or persistent access to the device and may attempt to modify firmware, inject malicious code, alter sensor behavior, or manipulate execution timing without triggering traditional integrity checks.
 
-- Physical access to the wearable device
-- Ability to manipulate firmware or execution flow
-- Capability to induce abnormal sensor or timing behavior
-- No prior knowledge of the internal detection models
+The assumed adversary does not require network connectivity and may operate in offline or constrained environments. Attacks are expected to be low-noise and stealthy, aiming to evade detection mechanisms such as cryptographic verification or static integrity validation.
 
-Remote-only attackers and purely network-based threats are considered out of scope for the current phase of this work.
+This work focuses on detecting post-deployment tampering effects observable through behavioral deviations rather than preventing tampering outright.
 
 ---
 
-## Methodology Overview
+## Methods Overview
 
-The research investigates AI-driven anomaly detection using behavioral signals derived from wearable device operation. These signals may include:
+The proposed approach investigates **AI-based behavioral analysis** for detecting tampering in wearable systems. Rather than relying on static signatures, the system models expected behavior using time-series data derived from:
 
-- Sensor output patterns
-- Timing and execution characteristics
-- Resource utilization behavior
-- System-level activity sequences
+- Sensor readings  
+- Execution timing and scheduling patterns  
+- Resource utilization signals  
+- System-level behavioral features  
 
-Machine learning models are trained to establish a baseline of normal behavior and identify deviations that may indicate tampering.
+Machine learning models are trained on **baseline (non-tampered) behavior** and evaluated against scenarios involving induced anomalies or manipulated execution conditions. Detection performance is assessed based on the model’s ability to identify deviations that may indicate unauthorized modification.
+
+The methodology emphasizes **runtime detection**, minimal overhead, and applicability to resource-constrained wearable platforms.
+
+---
+
+## Related Work and References
+
+Prior work in wearable security has explored firmware attestation, secure boot mechanisms, and anomaly detection based on network or application-level behavior. Recent research has investigated machine learning techniques for detecting abnormal system activity, including timing-based side channels and behavioral fingerprinting.
+
+This project builds on these ideas by focusing specifically on **runtime behavioral modeling** for wearable devices, emphasizing lightweight features and detection strategies suitable for resource-constrained environments.
+
+Relevant literature and citations will be added as the research progresses.
 
 ---
 
