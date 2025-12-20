@@ -67,7 +67,7 @@ Relevant literature and citations will be added as the research progresses.
 
 - [Research Report Overview](report/)
 - [Dataset Description](data/)
-
+- 📄 Research Problem Statement (`docs/problem_statement.md`)
 ---
 
 ## How to Run
