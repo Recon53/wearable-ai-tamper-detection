@@ -1,44 +1,57 @@
-# 💻 Detecting Data Tampering in Wearable Devices Using AI  
-![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
-![Python](https://img.shields.io/badge/Python-3.10%2B-yellow?style=for-the-badge)
-![AI](https://img.shields.io/badge/AI%20Project-Wearable%20Security-orange?style=for-the-badge)
+# Wearable AI Tamper Detection
 
-> 🧠 **Final project demonstrating AI-based anomaly detection for data integrity in wearable devices.**  
-> Uses Python and machine learning models to identify suspicious activity patterns in sensor data.
+This repository contains ongoing research investigating the detection of physical and logical tampering in wearable devices using AI-driven behavioral analysis.
+
+The project explores whether deviations in sensor activity, execution timing, and system behavior can be used to identify unauthorized manipulation of wearable hardware or firmware. The focus is on detecting subtle anomalies that traditional integrity checks may fail to capture.
+
+This work is research-oriented and under active development.
 
 ---
 
-## 📚 Project Documentation
+## Research Motivation
 
-- 📄 [Project Report Overview](report/)
-- 📊 [Dataset Information](data/)
+Wearable devices are increasingly used in security-sensitive contexts such as health monitoring, authentication, and continuous sensing. Due to their constrained form factor and deployment environment, wearables are particularly vulnerable to physical tampering, firmware modification, and stealthy adversarial manipulation.
+
+Traditional security mechanisms primarily focus on software integrity and network-based attacks. This research explores whether AI-based behavioral models can complement existing defenses by detecting anomalies indicative of tampering at runtime.
+
 ---
 
-## 🛠️ How to Run the Project
+## Threat Model
 
-### 1. Clone the Repository
-```bash
-git clone https://github.com/Recon53/wearable-ai-tamper-detection.git
-cd wearable-ai-tamper-detection
-```
+The threat model considered in this research includes adversaries with:
 
-### 2. Install Dependencies
+- Physical access to the wearable device
+- Ability to manipulate firmware or execution flow
+- Capability to induce abnormal sensor or timing behavior
+- No prior knowledge of the internal detection models
+
+Remote-only attackers and purely network-based threats are considered out of scope for the current phase of this work.
+
+---
+
+## Methodology Overview
+
+The research investigates AI-driven anomaly detection using behavioral signals derived from wearable device operation. These signals may include:
+
+- Sensor output patterns
+- Timing and execution characteristics
+- Resource utilization behavior
+- System-level activity sequences
+
+Machine learning models are trained to establish a baseline of normal behavior and identify deviations that may indicate tampering.
+
+---
+
+## Documentation
+
+- [Research Report Overview](report/)
+- [Dataset Description](data/)
+
+---
+
+## How to Run
+
+Clone the repository and install the required dependencies:
+
 ```bash
 pip install -r requirements.txt
-```
-
-### 3. Run the Main Script
-```bash
-python main.py
-```
-
----
-
-## 👥 Contributors
-- **Miguel Guadalupe** – Project Developer
-
----
-
-## 📄 License
-This project is licensed under the **MIT License**. You are free to use, modify, and distribute this project with proper attribution.
