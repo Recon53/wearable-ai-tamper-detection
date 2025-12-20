@@ -9,6 +9,12 @@
 
 ---
 
+## 📚 Project Documentation
+
+- 📄 [Project Report Overview](report/)
+- 📊 [Dataset Information](data/)
+---
+
 ## 🛠️ How to Run the Project
 
 ### 1. Clone the Repository
