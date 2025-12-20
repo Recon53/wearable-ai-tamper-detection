@@ -1,5 +1,17 @@
 # Wearable AI Tamper Detection
 
+![Status](https://img.shields.io/badge/Status-Research%20in%20Progress-yellow?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
+![Python](https://img.shields.io/badge/Python-3.10%2B-yellow?style=for-the-badge)
+![AI](https://img.shields.io/badge/Focus-AI%20Security-orange?style=for-the-badge)
+
+## Research Status
+
+This repository contains ongoing research investigating AI-based methods for detecting physical and logical data tampering in wearable devices.
+
+The code, experiments, and documentation are subject to change as the research progresses. Results should be interpreted as exploratory rather than finalized.
+
+
 This repository contains ongoing research investigating the detection of physical and logical tampering in wearable devices using AI-driven behavioral analysis.
 
 The project explores whether deviations in sensor activity, execution timing, and system behavior can be used to identify unauthorized manipulation of wearable hardware or firmware. The focus is on detecting subtle anomalies that traditional integrity checks may fail to capture.
